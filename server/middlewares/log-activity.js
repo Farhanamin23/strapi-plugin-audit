@@ -33,6 +33,9 @@ const getActionType = (method, path) => {
         if (method === "POST" && path.includes("content-manager")) {
             return "Create Content";
         }
+        if (method === "DELETE" && path.includes("content-manager")) {
+            return "Delete Content";
+        }
         if (method === "PUT" && path.includes("content-manager")) {
             return "Update Content";
         }
