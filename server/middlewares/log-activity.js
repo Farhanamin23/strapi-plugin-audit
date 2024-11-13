@@ -57,9 +57,6 @@ const getActionType = (method, path) => {
         if (method === "POST" && path.includes("users/batch-delete")) {
             return "User Delete";
         }
-        if (method === "POST" && path.includes("renew-token")) {
-            return "Renew Token";
-        }
     }
     return "Other Activities";
 };
